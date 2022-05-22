@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Library</title>
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- image hover -->
+    <!-- <link rel="stylesheet" href="./Library/imagehover.css-master/css/imagehover.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css" integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.css" integrity="sha512-Xxj/EBRz9HT96cFuGumHSg84Mbt1vnc8hCZslnt7jjW/E/DniMYYtt86Yx00DZ7G7G9xPOuXCSLHwG+R1LKQvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- animate style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            height: 2000px;
+        }
+        
+        .feather {
+            width: 100px;
+            /* color: hotpink? */
+        }
+        
+        .feather img {
+            width: 100%;
+        }
+        
+        .image-hover {
+            /* columns: 100px 1; */
+            display: flex;
+            justify-content: space-evenly;
+            /* display: inline; */
+        }
+        
+        figure img {
+            width: 300px;
+            height: 200px;
+        }
+        
+        .container {
+            background-color: blueviolet;
+            /* width: 100%; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* justify-content: space-evenly; */
+            /* justify-content: space-evenly; */
+        }
+        
+        .card {
+            margin-top: 5px;
+            text-align: center;
+            line-height: 100px;
+            /* margin: 0 auto; */
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- feather icon -->
+    <div class="feather">
+        <h4>Feather Icon</h4>
+        <!-- <img src="./Library/feather-icons/align-right.svg" alt=""> -->
+        <i data-feather="align-right"></i>
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+    <hr>
+    <!-- Image Hover -->
+    <h4>Image Hover</h4>
+    <figure class="imghvr-reveal-right">
+        <img src="./Image/CAR002.jpg" alt="example-image">
+        <figcaption>
+            <h3 class="animate__animated animate__fadeInLeft">Oscar Wilde</h3>
+            <p class="ih-zoom-in ih-delay-md">
+                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+            </p>
+            <a class="ih-fade-up ih-delay-lg button" href="#">Read More</a>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    <figure class="imghvr-slide-down">
+        <img src="./Image/CAR004.jpg" alt="example-image">
+        <figcaption>
+            <h3 class="ih-fade-down ih-delay-sm">Oscar Wilde</h3>
+            <p class="ih-zoom-in ih-delay-md">
+                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+            </p>
+            <a class="ih-fade-up ih-delay-lg button" href="#">Read More</a>
+        </figcaption>
+        <a href="#"></a>
+    </figure>
+    <hr>
+    <!-- animater style -->
+    <h4 class="animate__animated animate__fadeInRight">Animated Style</h4>
+    <div class="container">
+
+        <div class="card animate__animated animate__fadeInLeft animate__infinite">Hello div 1</div>
+        <div class="card animate__animated animate__flipOutY animate__infinite">Hello div 2</div>
+        <div class="card animate__animated animate__lightSpeedInRight animate__infinite">hello div 3</div>
+        <div class="card animate__animated animate__fadeInRight animate__infinite">
+            <h5 class="animate__animated animate__fadeInLeftBig animate__infinite">hello div 4</h5>
+        </div>
+        <div class="card animate__animated animate__backOutRight animate__delay-1s animate__infinite ">hello div 5</div>
+    </div>
+
+
+
+</body>
+
+</html>

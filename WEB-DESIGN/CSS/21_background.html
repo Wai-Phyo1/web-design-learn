@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 2000px;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            /* background-image: url("./Image/CAR003.jpg"); */
+            /* background-size: contain; */
+            background: url("./Image/CAR001.jpg") left bottom fixed, url("./Image/CAR003.jpg") fixed;
+            /* background-repeat: no-repeat; */
+            /* background-attachment: fixed; */
+            /* background-position: left top; */
+            background-repeat: no-repeat;
+            background-size: 500px 300px, 400px 250px;
+        }
+        
+        span {
+            position: fixed;
+            color: aqua;
+            /* text-align: center; */
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span>Hello my car</span>
+    </div>
+</body>
+
+</html>

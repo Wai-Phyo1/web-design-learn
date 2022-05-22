@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p {
+                color: red;
+            }
+            
+            span>p {
+                color: green;
+            } */
+        
+        div+p {
+            background-color: greenyellow;
+        }
+        
+        span~p {
+            background-color: yellow;
+        }
+        
+        a[target="_blank"] {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>Descendant Space Selector</h2>
+    <div>
+        <p>paragrap1</p>
+        <p>paragraph2</p>
+        <p>paragraph3</p>
+        <section>
+            <p>paragraph4</p>
+        </section>
+    </div>
+
+    <h2>Child Selector</h2>
+    <span>
+        <p>paragrap1</p>
+        <p>paragraph2</p>
+        <p>paragraph3</p>
+        <section><p>paragraph4</p></section>
+    </span> -->
+
+    <h2>Adjacent Sibling Selector (+)</h2>
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+
+    <div>
+        <p>Paragraph 5 in the div.</p>
+        <p>Paragraph 6 in the div.</p>
+    </div>
+
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+
+    <h2>General Sibling Selector(~)</h2>
+    <span>
+        <p>paragrap1</p>
+        <p>paragraph2</p>
+    </span>
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+    <span>
+        <p>paragrap1</p>
+        <p>paragraph2</p>
+    </span>
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+    <h2>[attribute="value"] Selector </h2>
+    <a href="https://www.youtube.com" target="_blank">youtube</a>
+    <a href="https://www.facebook.com">facebook</a>
+</body>
+
+</html>

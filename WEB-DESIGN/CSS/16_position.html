@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px;
+        }
+        
+        .one {
+            /* position: static; */
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            top: 20px;
+            z-index: 2;
+        }
+        
+        .two {
+            z-index: 1;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        
+        .three {
+            /* position: absolute; */
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+        
+        .four {
+            position: fixed;
+            bottom: 5;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+        
+        .bounded {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        
+        .child {
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .child:nth-child(3n) {
+            background-color: red;
+        }
+        
+        .child-one {
+            left: 0;
+        }
+        
+        .child-two {
+            right: 0;
+        }
+        
+        .child-three {
+            top: 40%;
+            left: 45%;
+            bottom: 50%;
+        }
+        
+        .child-four {
+            left: 0;
+            bottom: 0;
+        }
+        
+        .child-five {
+            right: 0;
+            bottom: 0;
+        }
+        
+        .sticky {
+            position: sticky;
+            top: 10px;
+            width: 100%;
+            height: 30px;
+            background-color: yellowgreen;
+            z-index: 4;
+            opacity: 0.5;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="sticky">I am sticky</div>
+    <div class="three">three</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eveniet obcaecati? Minima fugit blanditiis vel. Quam aperiam cupiditate fugit magnam assumenda veritatis libero modi blanditiis? Quas quod voluptates a quidem!</p>
+    <div class="bounded">
+        <div class="child child-one"></div>
+        <div class="child child-two"></div>
+        <span class="child child-three"></span>
+        <div class="child child-four"></div>
+        <div class="child child-five"></div>
+    </div>
+    <div class="four">four</div>
+</body>
+
+</html>

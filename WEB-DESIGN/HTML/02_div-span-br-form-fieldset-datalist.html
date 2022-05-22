@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> mollitia sed nobis, debitis tempora, fugiat quod eius quibusdam praesentium deserunt corporis eaque qui, <br /> veritatis aut. Laborum sit et ipsam ea!.Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. <br />Eius tenetur corrupti quod deleniti aspernatur nostrum obcaecati non expedita rem commodi aut, <br /> ipsa, eos excepturi atque praesentium inventore beatae aliquid voluptatum.</p>
+
+    <div style="width: 200px;height: 100px; background-color: yellow;">div element</div>
+    <div style="background-color: chartreuse;">div element 2</div>
+    <span style="width: 1000px; height: 100px; background-color: aqua;">span element</span>
+    <span style="background-color: orange;">span element 2</span><br><br>
+
+    <form action="">
+        <div style="border: 2px solid cyan; box-sizing: border-box;">
+            <h2 style="text-align: center;">User Info</h2>
+            <hr>
+            <div style="margin: 20px 100px;">
+                <input type="search">
+                <input type="submit" value="Search"><br><br>
+                <label for="uName" style="color: gold;">User Name</label>
+                <input type="text" name="name" id="uName" /><br /><br />
+                <label for="" style="color: red;">Email</label>
+                <input type="email" name="email" id="uEmail" /><br /><br />
+                <label for="" style="color: purple;">Password</label>
+                <input type="password" name="" id="uPassword" /><br />
+                <h3>Select Language</h3>
+                <input type="checkbox" name="" id="" checked="true" />English
+                <input type="checkbox" name="" id="" />Japan
+                <input type="checkbox" name="" id="" />Thailand<br />
+                <h3>select gender</h3>
+                <input type="radio" name="gender" id="" checked>Male
+                <input type="radio" name="gender" id="">Female
+                <br>
+                <label for="">Html</label>
+                <input type="range" name="" id="" min="0" max="9" value="3" step="3">
+                <h3>Color</h3>
+                <label for="color">Change Color</label>
+                <input type="color" name="" id="color" /><br /><br>
+                <input type="date" name="" id=""><br>
+                <input type="month" name="" id=""><input type="week" name="" id=""><br>
+                <input type="time" name="" id="">
+                <input type="datetime-local" name="" id=""><br /><br />
+                <input type="file" name="" id=""><br>
+                <input type="image" src="lib.jpg" alt="" style="width: 50px; height: 50px;">
+                <input type="number" name="" id="" min="0" max="100" step="10" value="50">
+                <input type="button" value="Submit" style="color: white; background-color: blue; border-radius: 10px; border-color: blue; width: 100px;" />
+                <button style="color: white; background-color: blue; border-radius: 10px; border-color: blue; width: 100px;">Submit</button>
+                <input type="reset" value="Reset">
+            </div>
+            <hr>
+            <h3>Select Fruits</h3>
+            <select name="" id="">
+                <option value="empty">Select One Fruit</option>
+                <option value="">Mango</option>
+                <option value="">Orange</option>
+                <option value="">Banana</option>
+                <option value="" selected>Tomato</option>
+            </select>
+            <h3>TextArea</h3>
+            <textarea name="" id="" cols="20" rows="5" placeholder="enter something" style="color:red">
+            </textarea>
+            <hr>
+            <h3>Field Set</h3>
+            <fieldset style="width: 300px;box-sizing: border-box;" id="fieldSet">
+                <legend>User Info:</legend>
+                <form action="">
+                    <div>
+                        <label for="">First Name</label>
+                        <input type="text" name="" id="" disabled>
+                    </div>
+                    <div>
+                        <label for="">Last Name</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="" id="email">
+                    </div>
+                    <div>
+                        <label for="">Birthday</label>
+                        <input type="date" name="" id="">
+                    </div>
+                    <input type="submit" value="submit">
+                </form>
+            </fieldset>
+            <hr>
+            <!-- use to input sueggestion -->
+            <h3>Data List</h3>
+            <input type="text" list="dataList" />
+            <datalist id="dataList">
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+            </datalist>
+
+            <h3>Option Group</h3>
+            <select name="" id="">
+                <optgroup label="Fruits">
+                    <option value="apple">Apple</option>
+                    <option value="orange">Orange</option>
+                    <option value="banana">Banana</option>
+                    <option value="mango">Mango</option>
+                </optgroup>
+                <optgroup label="Browser">
+                        <option value="Firefox">Firefox</option>
+                        <option value="Chrome">Chrome</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Safari">Safari</option>
+                </optgroup>
+            </select>
+            <section>One</section>
+            <section>Two</section>
+            <section>Three</section>
+            <section id="4" style="width: 100%;height: 400px; background-color: red;">Four</section>
+    </form>
+
+</body>
+
+</html>

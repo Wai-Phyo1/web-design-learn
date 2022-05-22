@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+         :root {
+            --body-background-color: rgb(0, 255, 225);
+            --btn-border-color: green;
+            --btn-background-light: black;
+            --btn-background-dark: cyan;
+            --btn-text-color: green;
+            --btn-text-size: 18px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--body-background-color);
+        }
+        
+        .container {
+            text-align: center;
+            /* display: flex;
+            justify-content: center; */
+            margin-top: 50px;
+            /* align-items: center;
+            height: 100vh; */
+        }
+        
+        .btn {
+            width: 200px;
+            padding: 10px;
+            border: 2px solid var(--btn-border-color);
+            border-radius: 10px;
+            margin: 20px;
+            color: var(--btn-text-color);
+            font-size: var(--btn-text-size);
+        }
+        
+        .dark-btn:focus {
+            background-color: var(--btn-background-light);
+        }
+        
+        i {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn dark-btn"><i class="fa-solid fa-toggle-on"></i>Dark Mode</button>
+        <button class="btn light-btn"><i class="fa-solid fa-toggle-off"></i>Light Mode</button>
+    </div>
+</body>
+
+</html>

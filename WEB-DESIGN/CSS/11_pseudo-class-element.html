@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+        
+        .content-container {
+            width: 500px;
+            height: 400px;
+            background-color: black;
+            color: red;
+            border-radius: 50px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        .title {
+            padding: 20px 0px;
+            font-variant: small-caps;
+        }
+        
+        .divided {
+            border: 1px solid red;
+        }
+        
+        .param {
+            text-transform: capitalize;
+            text-align: justify;
+            padding: 0px 15px;
+        }
+        
+        .btn {
+            margin-top: 30px;
+            width: 80%;
+            background-color: red;
+            border: none;
+            border-radius: 20px;
+            color: gold;
+            padding: 5px 0px;
+        }
+        /* pseudo class */
+        
+        .content-container:hover {
+            background-color: orange;
+            transition: 1s;
+        }
+        
+        .btn:active {
+            background-color: green;
+        }
+        
+        .back-link {
+            display: block;
+            text-decoration: none;
+        }
+        
+        .back-link:focus {
+            color: blueviolet;
+        }
+        
+        .back-link:visited {
+            color: red;
+        }
+        /* pseudo element */
+        
+        .title::first-letter {
+            color: cyan;
+        }
+        
+        .title::before {
+            content: "Welcome";
+        }
+        
+        .title::after {
+            content: "!!";
+        }
+        
+        .param::first-line {
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <h2 class="title">My Content</h2>
+        <div class="divided"></div>
+        <p class="param">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis ab corrupti. Commodi, unde. Reiciendis, ipsum! Sunt distinctio magnam perspiciatis ad, sint quam quod debitis natus dolorem architecto corporis tempore? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Nulla fugit impedit numquam mollitia eius ipsa, repudiandae non eveniet reprehenderit a. Harum alias amet eos porro ipsum consequuntur ex eligendi voluptate! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Deleniti unde blanditiis aperiam iure ducimus adipisci eveniet, molestiae ratione beatae harum consequuntur aliquid qui earum delectus repellat obcaecati, quibusdam esse labore?
+        </p>
+        <button class="btn">Click Me</button>
+        <a href="#" class="back-link">Back</a>
+    </div>
+</body>
+
+</html>
